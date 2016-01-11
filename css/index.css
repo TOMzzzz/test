@@ -1,0 +1,69 @@
+﻿
+body{
+	background-size:cover;
+	background-position:center;
+	background-repeat: no-repeat;
+}
+div#container{
+	width: 100%;
+	margin: auto;
+}
+div#outer{
+	position: relative;
+	width: 29em;
+	margin: 2em auto;
+	box-shadow: 4px 4px 4px 4px #555;
+	border-radius: 10px 10px;
+}
+#legend img{
+	height:17.5em; 
+	width:28em;
+}
+/*Search*/
+form.search{
+	width:28em;
+	margin: 0 auto;
+}
+.search fieldset{
+	border: 0;
+	margin:10px 14px;/*去掉默认的边框*/
+}
+.search section{
+	overflow:hidden;
+	padding: 0.25em 0;
+}
+.search input{
+	float: right;
+	width:9em;
+	margin: 4px 6px 4px 0;
+	padding: 2px 0 3px 5px;
+	border-radius: 10px 0;
+	outline: none;
+	font-weight: 400;
+	font-size: 1em;
+	color:#888;
+	-webkit-transition:1s width;/*搜索框过渡动画*/ 
+	transition:1s width;
+}
+.search input:focus{width: 19em}
+.search label{display: none;}
+form.search input{font-family: 'Merienda';background: #fff;}
+form.search input::-webkit-input-placeholder{color: #ccc;}
+form.search input::-input-placeholder{color: #ccc;}
+
+.search section p{
+	clear: both;
+	margin: .2em 0 0;
+	text-align: right;
+	font-size: .8em;
+	line-height: 1;
+	color: #555;
+}
+.search section p a{
+	color:#333;
+	text-decoration: none;
+}
+.search section p a:hover{
+	color: #777;
+	text-decoration: none;
+}

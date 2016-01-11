@@ -1,0 +1,265 @@
+body{
+	margin: 0 0;
+	overflow-x:hidden;/*滚动条*/
+}
+div#container{
+	display: block;
+	width: 960px;
+	margin: 0 auto;
+}
+div#topnavi{
+	margin: 0 0 ;
+	padding: 0 0;
+}
+div#topimage{
+	position:absolute;/*浮动*/
+	z-index: 1;
+	float: left;
+	margin: 0 0 0 6em;
+	padding: 0 0;
+}
+div#search{
+	position:relative;/*浮动*/
+	width: 960px;
+	margin: 0px auto;
+	border-bottom: 4px solid #DDD;
+}
+.clearfix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+/*header*/
+#topimage img{
+	width: 10em;
+	height: 13em;
+	border: 2px solid #DDD;
+}
+nav#navigation{
+	float: right;
+	margin: 5em 4em 0 auto;
+	text-align: center;
+}
+#navigation ul{
+	width: 20em;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+	border-top: 2px solid #333;
+	border-bottom: 2px solid #333;
+}
+#navigation li{
+	float: left;
+	padding: .15em .15em;
+ 	margin: 0 auto;
+	list-style-type: none;
+}
+#navigation li a:hover{
+	color: white;
+    background-color: black; 
+	box-shadow: 2px 2px 4px #555;
+}
+#navigation a{
+	display: block;
+	font-family: 'Merienda', cursive;
+	font-size: 1.2em;
+	padding: 0 1em;
+	text-decoration: none;
+}
+/*底部导航*/
+hr.double {
+	border-style: double;
+	border: double #222; 
+	border-width: 3px 0 0;
+}
+#footer li{
+	float: left;
+	margin: 0 auto;
+	list-style-type: none;
+}
+#footer ul{
+	margin: -5px 0 0 -2.5em;
+	width: 20em;
+}
+#footer a{
+	display: block;
+	font-family: 'Merienda', cursive;
+	font-size: 1em;
+	padding: 0 8px;
+	text-decoration: none;
+}
+#footer li a:hover{
+	border-bottom: 1px solid #333;
+}
+#footer p{
+	margin:0px;
+	padding: 1px;
+	float: right;
+	text-align: right;
+}
+/*Search*/
+form.search{
+	float: right;
+	margin: 2em 4em 0 0;
+	width:20em;
+}
+.search input{
+	float: right;
+	margin: 2px auto 0;
+	width:9em;
+	padding: 2px 0 3px 5px;
+	border-radius: 10px 0;
+	outline: none;
+	font-weight: 400;
+	font-size: 1em;
+	color:#888;
+	-webkit-transition:1s width;/*搜索框过渡动画*/ 
+	transition:1s width;
+}
+.search input:focus{width: 15em}
+.search label{display: none;}
+form.search input{font-family: 'Merienda', cursive;background: #fff;}
+/*left*/
+div#left{
+	padding: 1.5em 0 2.5em 0;
+	float: left;
+	border-right: 4px solid #DDD;
+}
+form.chioce{
+	margin: 11.5em 0 0 6em;
+}
+fieldset{
+	border: 0;/*去掉默认的边框*/
+	margin: 0 0;
+	padding: 0 0;
+}
+section input[type=button]{
+	width: auto;
+	margin: 0 0 2px 0;
+	padding: 0 2.05em 3px;
+	font-size: 2em;
+	font-weight: 800;
+	border-left: 4px solid #DDD;
+	border-top: 2px solid #DDD;
+	border-bottom: 4px solid #DDD;
+	border-right: none;	
+}
+section input#new{
+	color: #A7E63A;
+	background-color: #fff;
+}
+section input#hot{
+	color: #FC6C62;
+	background-color: #fff;
+}
+section input#new:hover{
+	color: #fff;
+	background-color: #A7E63A;
+	text-shadow: 2px 2px 2px #333;
+}
+section input#hot:hover{
+	color: #fff;
+	background-color: #FC6C62;
+	text-shadow: 2px 2px 2px #333;
+}
+/*main*/
+div#main{
+	float: left;
+	margin: 0 4em 0 0;
+	padding: 1.5em 0 2.5em 2em;
+}
+article.note{
+	margin: .5em auto;
+}
+section.image_area{
+	float: left;
+}
+section.image_area img{
+	height:10em; 
+	width:27em;
+	margin: 0 0;
+	border-top:2px solid #616161;
+	border-left:2px solid #616161;
+	border-bottom:2px solid #616161;
+	border-radius: 10px 0 0 10px
+}
+section.option_area{
+	float: left;
+	height: 10em;
+	border: 2px solid #616161;
+	border-radius: 0 10px 10px 0;
+}
+div.option{
+	height: 3.25em;
+	width: 8.25em;
+}
+div.option#recommend{
+	border-top:2px solid #616161;
+	border-bottom:2px solid #616161;
+}
+/*链接暂时效果*/
+.button, .button:visited {
+	text-align: center;
+	height: 1.25em;
+	width: 8.25em;
+	font-family: 'Merienda', cursive;
+	padding: 1em 0;
+	margin: 0 0;
+	color: #000;
+	display: inline-block;
+	font-size: 1em;
+	cursor: pointer;
+	line-height: 150%;
+	background-color: transparent;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 1px;
+	letter-spacing: 0.07em;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.button.pink, .button:visited.pink {
+    color: #d84695;
+}
+.button.pink:hover, .button.pink:focus, .button:visited.pink:hover, .button:visited.pink:focus {
+    color: white;
+    background-color: #d84695; 
+}
+.button.blue, .button:visited.blue {
+    color: #07b1d0;
+}
+.button.blue:hover, .button.blue:focus, .button:visited.blue:hover, .button:visited.blue:focus {
+    color: white;
+    background-color: #07b1d0; 
+}
+.button.green, .button:visited.green {
+    color: #06d85f;
+}
+.button.green:hover, .button.green:focus, .button:visited.green:hover, .button:visited.green:focus {
+    color: white;
+    background-color: #06d85f; 
+}
+/*上下翻页*/
+.page{
+	margin: 1em auto;
+	text-align: center;
+}
+.page #ppage{
+	width: 60px;
+	height: 60px;
+	margin: 0 1em 0 auto;
+	display: inline-block;
+	border-radius:10px 10px;
+	box-shadow: 1px 1px 2px #888;
+}
+.page #npage{
+	width: 60px;
+	height: 60px;
+	margin: 0 auto 0 1em;
+	display: inline-block;
+	border-radius:10px 10px;
+	box-shadow: 1px 1px 2px #888;
+}

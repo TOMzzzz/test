@@ -1,0 +1,128 @@
+
+body{
+	background-size:cover;
+	background-position:center;
+	background-repeat: no-repeat;
+}
+div#container{
+	width: 100%;
+	margin: auto;
+}
+div#outer{
+	position: relative;
+	width: 29em;
+	margin: 2em auto;
+	box-shadow: 4px 4px 4px 4px #555;
+	border-radius: 10px 10px;
+}
+#legend img{
+	height:17.5em; 
+	width:28em;
+}
+/*Signin*/
+form.signin{
+	width:28em;
+	margin: 0 auto;
+}
+.signin fieldset{
+	border: 0;
+	margin:10px 14px;/*去掉默认的边框*/
+}
+.signin section{
+	overflow:hidden;
+	padding: 0.25em 0;
+}
+.signin section label{
+	font-weight: 800;
+	float: left;
+	width: 5em;
+	margin: .5em .3em 0 0;
+	line-height: 1.5;
+	color: #000;
+} 
+.signin section input{
+	float: right;
+	width: 18em;
+	margin: 4px 6px 4px 0;
+	padding: 2px 0 3px 5px;
+	color: #555;
+	font-size: 1em;
+	outline: none;
+	border-radius: 10px 0;
+}
+.signin section input[type=submit]{
+	float: right;
+	width: auto;
+	margin: 0 2px 3px 0;
+	padding: 0 8px 3px;
+	font-size: 1.25em;
+	font-weight: 800;
+	color: #fff;
+	border: none;
+	background-color: #D6E636;
+	box-shadow: 1px 1px 2px #888;
+}
+.signin section p{
+	float: right;
+	clear: both;
+	margin: .2em 0 0;
+	text-align: right;
+	font-size: .8em;
+	line-height: 1;
+	color: #555;
+}
+.signin section p a{
+	color:#333;
+	text-decoration: none;
+}
+.signin section p a:hover{
+	color: #777;
+	text-decoration: none;
+}
+/*error*/
+.signin section p.direction.error{
+	display: block;
+	color: #f00;
+}
+.signin section p.direction{display:none;}
+
+/*阴影*/
+input {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+input:focus,textarea:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+}
+input:focus:required:invalid,
+textarea:focus:required:invalid,
+select:focus:required:invalid {
+  color: #b94a48;
+  border-color: #ee5f5b;
+}
+input:focus:required:invalid:focus,
+textarea:focus:required:invalid:focus,
+select:focus:required:invalid:focus {
+  border-color: #e9322d;
+  -webkit-box-shadow: 0 0 6px #f8b9b7;
+  -moz-box-shadow: 0 0 6px #f8b9b7;
+  box-shadow: 0 0 6px #f8b9b7;
+}
+:-moz-placeholder {
+  color: #999999;
+}
+::-webkit-input-placeholder {
+  color: #999999;
+}

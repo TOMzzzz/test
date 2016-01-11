@@ -1,0 +1,4 @@
+已修改：
+把scenery页面的元素对齐了
+未修改：
+home页面的button的js效果没有做好
